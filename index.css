@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  main {
+    color : #ff0000;
+  }
+  
+  .ball {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: absolute;
+    animation: bounce 2s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(600px);
+    }
+  }
